@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head>
+	<title><%=shopName%> Users List </title>
+ </head>
+ <body>
+	<h1> <%=shopName%> List of Users </h1>
+	<h2> These are the shop users: </h2>
+ 
+ <ul> 
+	<% for(let i=0; i < listUsers.length; i++ { %>
+	   <li>
+	      <%= listUsers[i].Usernames+"" + listusers[i].Email %>
+	   </li>
+	<% } %>
+ </ul>
+ </body>
+</html>

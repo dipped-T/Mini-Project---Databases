@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%> Shop </title>
+  </head>
+  <body>
+    <h1><%=shopName%> Shop </h1>
+    <h2>Here you can see Food and values we sell:</h2>
+    <ul>
+        <% for(let i=0; i < availableBooks.length; i++) { %>
+          <li><%= availableBooks[i].name, availableBooks[i].values, availableBooks[i].unit, availableBooks[i].carbs, availableBooks[i].fat, availableBooks[i].protein, availableBooks[i].sugar, availableBooks[i].salt %></li>
+        <% } %>
+   </ul>
+  </body>
+</html>  
